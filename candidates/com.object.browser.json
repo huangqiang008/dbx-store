@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "com.object.browser",
+  "publisher": "huangqiang",
+  "version": "1.1.2",
+  "name": "Object Storage",
+  "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), and multi-select batch delete / download.",
+  "icon": "https://raw.githubusercontent.com/huangqiang008/dbx-object-storage/v1.1.2/assets/plugin.svg",
+  "tags": [
+    "storage",
+    "oss",
+    "s3",
+    "minio",
+    "object-storage",
+    "browser"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.storage",
+    "host.events",
+    "host.filesystem"
+  ],
+  "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.1.2",
+  "homepage": "https://github.com/huangqiang008/dbx-object-storage",
+  "license": "MIT",
+  "releaseNotes": "Fix public-read ACL: objects can now be reverted to private (previously stuck public because the Aliyun SDK does not expose object-level Grants, so the plugin now probes anonymous accessibility instead). Added a public-status badge and a toolbar toggle to scan and mark public-read objects. Connection presets for Alibaba Cloud OSS, Tencent COS, Huawei OBS, AWS S3, MinIO, Cloudflare R2, Wasabi and Backblaze B2.",
+  "localizations": {
+    "zh-CN": {
+      "name": "对象存储",
+      "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览（Office / 3D / HTML / Markdown）、多选批量删除 / 下载。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/huangqiang008/dbx-object-storage/releases/download/v1.1.2/com.object.browser-1.1.2-darwin-arm64.dbxp",
+      "sha256": "78c5b29959bd0dc7decf26719aec5500cb3f402d11333d72d221f6e4e50b906d",
+      "size": 7749124
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/huangqiang008/dbx-object-storage/releases/download/v1.1.2/com.object.browser-1.1.2-windows-x64.dbxp",
+      "sha256": "627972a60eae2ece2bf184954e0a43780f159c7378dba2049c793d4a0dceb5b9",
+      "size": 8141851
+    }
+  ]
+}
