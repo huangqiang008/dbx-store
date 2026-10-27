@@ -2384,7 +2384,7 @@
       "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), and multi-select batch delete / download.",
       "publisher": "huangqiang",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.1.2/icon.svg",
+      "icon": "https://raw.githubusercontent.com/huangqiang008/dbx-object-storage/v1.2.0/assets/plugin.svg",
       "tags": [
         "storage",
         "oss",
@@ -2399,10 +2399,10 @@
         "host.events",
         "host.filesystem"
       ],
-      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.1.2",
+      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.2.0",
       "homepage": "https://github.com/huangqiang008/dbx-object-storage",
       "license": "MIT",
-      "latestVersion": "1.1.2",
+      "latestVersion": "1.2.0",
       "versions": [
         {
           "version": "1.1.2",
@@ -2436,6 +2436,25 @@
               "sha256": "bf0a45590949b2e8f2a2e70166e5a20dbd58ac9e0ef6893397563f7f4175e0c7",
               "signingKeyId": "dbx-store-release-2026",
               "size": 7626439
+            }
+          ]
+        },
+        {
+          "version": "1.2.0",
+          "releasedAt": "2026-10-27T02:38:00.000Z",
+          "releaseNotes": "Custom TLS / certificate handling: pin a custom CA and/or skip endpoint certificate verification for self-signed / private endpoints (MinIO, on-prem S3, etc.). macOS ARM64 packaging restored (darwin-x64 remains disabled — macos-13 runner capacity-starved).",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://github.com/huangqiang008/dbx-object-storage/releases/download/v1.2.0/com.object.browser-1.2.0-darwin-arm64.dbxp",
+              "sha256": "eceb03d4c4ab063d15cd7ff9d0d9bd6ba910d9be854fff1748cc042b816429c2",
+              "size": 7881647
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://github.com/huangqiang008/dbx-object-storage/releases/download/v1.2.0/com.object.browser-1.2.0-windows-x64.dbxp",
+              "sha256": "3aeac8c5f8a98ff57723c722f9c400b8f7754e7c7b7dc41bab8b7b9625e1187a",
+              "size": 8363580
             }
           ]
         }
@@ -6997,18 +7016,60 @@
       "description": "Organize local passwords in nested groups. Vault always AES-GCM encrypted; optional Argon2id master password.",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/icon.svg",
       "tags": [
         "password",
         "productivity",
         "workbench"
       ],
       "permissions": [],
-      "source": "https://github.com/allran/dbx-plugin-password/tree/v0.3.2",
+      "source": "https://github.com/allran/dbx-plugin-password/tree/v0.3.3",
       "homepage": "https://github.com/allran/dbx-plugin-password",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.2",
+      "latestVersion": "0.3.3",
       "versions": [
+        {
+          "version": "0.3.3",
+          "releasedAt": "2026-10-27T06:14:39.545Z",
+          "releaseNotes": "v0.3.3: persist keeps unlocked Argon2 params (fixes silent rekey on save), AAD v4 binds m/t/p, KDF param bounds, Windows icacls via System32 absolute path.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/io.dbx.password-0.3.3-darwin-arm64.dbxp",
+              "sha256": "4b6cf9270fd11f67ebc936c33fbb163fb3787e0797155be9726cea6189f8675f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 377368
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/io.dbx.password-0.3.3-darwin-x64.dbxp",
+              "sha256": "d1c0259774b9cb4763f31ff5d2a921dd7930100e50b3d58e5757a18d59d8a05f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 414542
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/io.dbx.password-0.3.3-linux-arm64.dbxp",
+              "sha256": "3a457b6290ee90bc9ed390fd3dd2ee615a944527684105ae13c47a1f3f5ee9f3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 406143
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/io.dbx.password-0.3.3-linux-x64.dbxp",
+              "sha256": "fd908c81c35e4739824bd5ca63f4e68e814b69658982151793340b22dccf8286",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 436439
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/io.dbx.password-0.3.3-windows-x64.dbxp",
+              "sha256": "7350d2d04d2566f63f2611b72cfc05c0efc2c75b2141b85079dc11ad70fb6ffe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 379625
+            }
+          ]
+        },
         {
           "version": "0.3.2",
           "releasedAt": "2026-10-27T02:48:33.156Z",
@@ -9588,6 +9649,47 @@
       }
     },
     {
+      "id": "io.github.chow-code.redis-bson-codec",
+      "name": "Redis BSON Codec",
+      "description": "Decode Redis BSON values into type-preserving Extended JSON, with an optional custom external-program codec.",
+      "publisher": "chow-code",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.chow-code.redis-bson-codec/0.1.0/icon.svg",
+      "tags": [
+        "redis",
+        "bson",
+        "codec",
+        "developer-tools"
+      ],
+      "permissions": [],
+      "source": "https://github.com/Chow-Code/dbx-bson-codec/tree/v0.1.0",
+      "homepage": "https://github.com/Chow-Code/dbx-bson-codec",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-10-27T06:55:23.168Z",
+          "releaseNotes": "Initial Windows x64 candidate: bundled BSON to Canonical Extended JSON, workbench reverse encoding and byte-level round-trip checks, plus an optional custom external-program codec. Requires a DBX build with redis-value-codec-v1 (confirmed in v0.6.55 and later source).",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.chow-code.redis-bson-codec/0.1.0/io.github.chow-code.redis-bson-codec-0.1.0-windows-x64.dbxp",
+              "sha256": "e68b842e9e0fdd5f428a7d34bd84cfc57b8ff6cfeaff0ce0b0831bbb68f30414",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1676151
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "Redis BSON 编解码",
+          "description": "将 Redis BSON 二进制解码为保留类型的 Extended JSON，并支持自定义外部程序。"
+        }
+      }
+    },
+    {
       "id": "io.github.icefoxs.aes-tools",
       "name": "aes-tools",
       "description": "AES-128-ECB encryption/decryption plugin based on the DBX platform, compatible with Hutool's default AES configuration. (AES-128-ECB is deterministic encryption and not semantically secure)",
@@ -10236,6 +10338,78 @@
         "en": {
           "name": "Embedded Terminal",
           "description": "Run an interactive local shell directly inside a DBX workbench."
+        }
+      }
+    },
+    {
+      "id": "io.github.my2sql",
+      "name": "my2sql Binlog Toolkit",
+      "description": "MySQL binlog viewer, SQL/rollback generator and flashback executor for DBX.",
+      "publisher": "cutemolly",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/icon.svg",
+      "tags": [
+        "mysql",
+        "binlog",
+        "rollback",
+        "dba"
+      ],
+      "permissions": [
+        "host.connections:read",
+        "host.events"
+      ],
+      "source": "https://github.com/cutemolly/dbx-plugin-my2sql/tree/v1.0.1",
+      "homepage": "https://github.com/cutemolly/dbx-plugin-my2sql",
+      "license": "MIT",
+      "latestVersion": "1.0.1",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "releasedAt": "2026-10-27T06:22:41.231Z",
+          "releaseNotes": "1.0.1: security review fixes (jobId path-traversal guard, UI HTML escaping, server-side one-shot execution confirmation), disclosure corrections, packaged LICENSE + third-party notices, per-connection TLS (off/require/verify), 0600 output files. Round 2 on the same tag: large output files are streamed instead of read whole (a multi-GB rollback script could abort the sidecar), manual stop keeps the generated files and statistics, history view with connection attribution plus per-job delete, panic isolation at the request/engine/exec boundaries, lazy output preview.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-darwin-arm64.dbxp",
+              "sha256": "bd4b625cf3b8e093fb08492337aadbbc8eefd7bdb89141ccdc0b9e9feb4a77e4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6370373
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-darwin-x64.dbxp",
+              "sha256": "3572136942d3576df74406c9bf84f61d0bc30caf617320f3aec963a7bd6b8a08",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6634217
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-linux-arm64.dbxp",
+              "sha256": "c7a0a46906478f9661e588dbce794b0a8b38836e459f3ed8ecbe99cebd99b8fe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6291600
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-linux-x64.dbxp",
+              "sha256": "9d5c0fb7b6a14fc4f783b209c3516880b1a457ad54cfcc2a3f86b38472c0ac5c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6653858
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-windows-x64.dbxp",
+              "sha256": "7fadbd5e6d4e6be2987a48db555e936adb1cda145d632e68ad1c66e6c8386041",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6753576
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "my2sql Binlog 工具",
+          "description": "MySQL binlog 查看、SQL/回滚生成与闪回执行工具。"
         }
       }
     },
