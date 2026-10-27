@@ -4,7 +4,7 @@
   "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), and multi-select batch delete / download.",
   "publisher": "huangqiang",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/huangqiang008/dbx-object-storage/v1.1.2/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/huangqiang008/dbx-object-storage/v1.2.0/assets/plugin.svg",
   "tags": [
     "storage",
     "oss",
@@ -19,10 +19,10 @@
     "host.events",
     "host.filesystem"
   ],
-  "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.1.2",
+  "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.2.0",
   "homepage": "https://github.com/huangqiang008/dbx-object-storage",
   "license": "MIT",
-  "latestVersion": "1.1.2",
+  "latestVersion": "1.2.0",
   "versions": [
     {
       "version": "0.4.0",
@@ -56,6 +56,25 @@
           "sha256": "be4e49edc4a3a5355b44500fdbc22f6ab13632a5e45c9ad4a3bae327673be182",
           "signingKeyId": "dbx-store-release-2026",
           "size": 8143942
+        }
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "releasedAt": "2026-10-27T02:38:00.000Z",
+      "releaseNotes": "Custom TLS / certificate handling: pin a custom CA and/or skip endpoint certificate verification for self-signed / private endpoints (MinIO, on-prem S3, etc.). macOS ARM64 packaging restored (darwin-x64 remains disabled — macos-13 runner capacity-starved).",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://github.com/huangqiang008/dbx-object-storage/releases/download/v1.2.0/com.object.browser-1.2.0-darwin-arm64.dbxp",
+          "sha256": "eceb03d4c4ab063d15cd7ff9d0d9bd6ba910d9be854fff1748cc042b816429c2",
+          "size": 7881647
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://github.com/huangqiang008/dbx-object-storage/releases/download/v1.2.0/com.object.browser-1.2.0-windows-x64.dbxp",
+          "sha256": "3aeac8c5f8a98ff57723c722f9c400b8f7754e7c7b7dc41bab8b7b9625e1187a",
+          "size": 8363580
         }
       ]
     }
