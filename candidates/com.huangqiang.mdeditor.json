@@ -5,8 +5,16 @@
   "version": "1.0.0",
   "name": "Markdown",
   "description": "A WYSIWYG Markdown editor for local files, powered by Typedown and Muya.",
-  "tags": ["markdown", "editor", "notes", "wysiwyg"],
-  "permissions": ["host.workbench", "host.storage"],
+  "tags": [
+    "markdown",
+    "editor",
+    "notes",
+    "wysiwyg"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.storage"
+  ],
   "source": "https://github.com/huangqiang008/dbx-markdown-editor",
   "homepage": "https://github.com/huangqiang008/dbx-markdown-editor",
   "license": "MIT",
@@ -21,8 +29,8 @@
     {
       "target": "windows-x64",
       "url": "https://github.com/huangqiang008/dbx-markdown-editor/releases/download/v1.0.0/com.huangqiang.mdeditor-1.0.0-windows-x64.dbxp",
-      "sha256": "3c24c088c66071e4eb1db4b7d54dab193b9316f22b955fc7923d4cadd15eea09",
-      "size": 9126688
+      "sha256": "4c670f8db1a2c4559ff76f472e5de00bcbac532e35d575361d735bf7503cea43",
+      "size": 9047506
     }
   ]
 }
