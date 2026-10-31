@@ -833,6 +833,50 @@
       }
     },
     {
+      "id": "com.caiyq925.qrcode",
+      "name": "QR Code Generator",
+      "description": "Generate QR codes from text, Wi-Fi networks or contact cards, with custom colors, module shapes and a centered logo. Export PNG, copy to clipboard, and keep a history of recent codes.",
+      "publisher": "caiyq925",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.caiyq925.qrcode/0.1.0/icon.svg",
+      "tags": [
+        "qrcode",
+        "utility",
+        "productivity",
+        "wifi",
+        "vcard"
+      ],
+      "permissions": [
+        "host.storage"
+      ],
+      "source": "https://github.com/caiyq925-cell/dbx-plugin-qrcode/tree/v0.1.0",
+      "homepage": "https://github.com/caiyq925-cell/dbx-plugin-qrcode",
+      "license": "MIT",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-10-30T10:29:50.343Z",
+          "releaseNotes": "Initial release. / 首次发布。",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.caiyq925.qrcode/0.1.0/com.caiyq925.qrcode-0.1.0-universal.dbxp",
+              "sha256": "d468de49e56d50b21ad702804dcdd5e0b317df0ff10fcc266b13e550c2c67537",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 28215
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "二维码工具",
+          "description": "文本、Wi-Fi、名片一键生成二维码：自定义颜色、码点形状与中心 Logo，导出 PNG、复制到剪贴板，并保留历史记录。"
+        }
+      }
+    },
+    {
       "id": "com.dbx.dbf",
       "name": "DBF Studio",
       "description": "Open, inspect, edit, validate and export DBF tables (dBase III/IV/V, FoxPro, VFP), with built-in field dictionaries for Chinese exchange settlement files.",
@@ -1281,24 +1325,71 @@
     {
       "id": "com.jettech.httpclient",
       "name": "HTTP Client",
-      "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses.",
+      "description": "A Postman-style HTTP/gRPC workbench: compose requests, import OpenAPI, sync via WebDAV, and inspect responses through a native sidecar.",
       "publisher": "jettech",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.8/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/icon.svg",
       "tags": [
         "http",
+        "grpc",
+        "openapi",
+        "swagger",
+        "webdav",
         "api",
         "debugging",
         "network"
       ],
       "permissions": [
-        "host.events"
+        "host.events",
+        "host.workbench"
       ],
       "source": "https://github.com/renpengkai/dbx-plugin-http-client",
       "homepage": "https://github.com/renpengkai/dbx-plugin-http-client",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.8",
+      "latestVersion": "0.2.1",
       "versions": [
+        {
+          "version": "0.2.1",
+          "releasedAt": "2026-10-30T10:08:53.100Z",
+          "releaseNotes": "0.2.1：修正 Manifest 兼容性（命令 ID 改为全小写 open-tab；菜单 group 改用 primary/secondary）。0.2.0：gRPC、OpenAPI/Swagger 导入、WebDAV 同步、Dock 快捷入口。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/com.jettech.httpclient-0.2.1-darwin-arm64.dbxp",
+              "sha256": "3f79dd170f297bfc7591a928da9c19a2bb8ea0599f4dd7439b9e99530a46894c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9478751
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/com.jettech.httpclient-0.2.1-darwin-x64.dbxp",
+              "sha256": "1f2bdf151c9d13c47c659cb70227fe21618430955e6225bec0fb7e70118a0fc6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9908650
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/com.jettech.httpclient-0.2.1-linux-arm64.dbxp",
+              "sha256": "811a042611fcf46f4951e27d29f9e72022197dfd61e6b5e621c0ac39e199f905",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9399501
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/com.jettech.httpclient-0.2.1-linux-x64.dbxp",
+              "sha256": "213941a93151f93f5999a391785266dd97fc0ff4434f65349bda88491d505a33",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 10003597
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/com.jettech.httpclient-0.2.1-windows-x64.dbxp",
+              "sha256": "3ad3d976348a5516ca66d6a4f35bcb45927aa8d1c26857ff4d68384a5f1368a5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 10147526
+            }
+          ]
+        },
         {
           "version": "0.1.8",
           "releasedAt": "2026-09-30T18:06:26.965Z",
@@ -1513,7 +1604,7 @@
       "localizations": {
         "zh-CN": {
           "name": "HTTP 客户端",
-          "description": "类似 Postman 的 HTTP 接口调试工作台：构造请求、通过原生 Sidecar 发送并查看响应。"
+          "description": "类似 Postman 的 HTTP/gRPC 接口调试工作台：构造请求、导入 OpenAPI、经 WebDAV 同步，并通过原生 Sidecar 发送并查看响应。"
         }
       }
     },
@@ -2940,10 +3031,10 @@
     {
       "id": "com.vyrnax.translation",
       "name": "Translation 即时翻译",
-      "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 9 类引擎：开箱即用的免费翻译服务（B站公开部署的 Index-Translate 模型，无需注册、无需 API Key）、OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。所有网络请求由内置 Go 侧车发出（浏览器沙箱的 CSP 禁止前端直连外部端点，且 host.network 白名单最多 8 个固定 origin，无法满足用户自填端点）；侧车会直连用户在引擎配置中填写的任意 HTTP/HTTPS 端点，翻译原文将发往用户所选引擎的第三方服务。本地 CLI 引擎以参数数组方式（不经 shell）执行用户配置的本机命令，凭据由该 CLI 自持，插件不接触。使用内置免费翻译服务时，原文同样会发往该公益端点（index-translate.bilibili.com）；它是公共享用服务、不保证长期可用，也没有服务等级承诺，对稳定性或数据流向有要求的用户请改用自己配置的引擎。API Key 经系统密钥库（Windows DPAPI / macOS Keychain / Linux secret-tool）加密后落盘到插件数据目录，不可用时降级为机器绑定 AES-256-GCM 并在界面明确警示。引擎配置、翻译历史与界面偏好统一存放在 <插件数据目录>/translation.db（SQLite），由侧车写入；其中翻译历史（原文与译文）为明文保存，卸载插件后仍会保留，可在「历史」页随时清空；前端运行在 opaque origin 沙箱中，不接触磁盘，也不使用 localStorage。",
+      "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 9 类引擎：开箱即用的免费翻译服务、OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。",
       "publisher": "vyrnax",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.4/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.5/icon.svg",
       "tags": [
         "translation",
         "translate",
@@ -2959,8 +3050,50 @@
       "source": "https://github.com/vyrnax/dbx-plugin-translation",
       "homepage": "https://github.com/vyrnax/dbx-plugin-translation",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.4",
+      "latestVersion": "0.2.5",
       "versions": [
+        {
+          "version": "0.2.5",
+          "releasedAt": "2026-10-30T10:03:25.782Z",
+          "releaseNotes": "0.2.5：\n1、新增标识符自动分词\n2、字段名/变量名不再被机器翻译原样吐回\n3、原文、译文与历史记录一律保持原样，无感知\n4、大小写按语义保留（US≠us，ID≠it）\n5、新增方向自适应：目标是中文而原文也是中文时自动反向翻译\n6、设置页可一键关闭分词与换向",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.5/com.vyrnax.translation-0.2.5-darwin-arm64.dbxp",
+              "sha256": "215c3900ed36792f0ed0a16b376ecff0fa63553207ba6034b47acef1bec3c515",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4328510
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.5/com.vyrnax.translation-0.2.5-darwin-x64.dbxp",
+              "sha256": "03ed814fbfc887840c349aa338af1e981945b7cf5f46d78a5875a2b4482b9e25",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4516959
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.5/com.vyrnax.translation-0.2.5-linux-arm64.dbxp",
+              "sha256": "4e4989c48674a27b1ca16ba94e2c3c077e579f45dfb460d8f70d6a14f008d20a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4035147
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.5/com.vyrnax.translation-0.2.5-linux-x64.dbxp",
+              "sha256": "f5eb8ea9be6aaf14a7818075891aa78c2ccc1b87fdd86bc8c6e1e835180fef21",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4369945
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.5/com.vyrnax.translation-0.2.5-windows-x64.dbxp",
+              "sha256": "7d4f1e8c781b77757237313a808cd385f4da10df368fbb58039efea43fc53bc1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4465121
+            }
+          ]
+        },
         {
           "version": "0.2.4",
           "releasedAt": "2026-10-29T17:47:01.723Z",
@@ -3091,7 +3224,7 @@
       "localizations": {
         "en": {
           "name": "Translation",
-          "description": "Translation — multi-engine translation plugin with 9 engine types: an out-of-the-box free translation engine (Bilibili's publicly deployed Index-Translate model, no signup and no API key), OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history. All HTTP requests are issued by the bundled Go sidecar (the browser sandbox CSP forbids direct calls, and the host.network allowlist cannot express user-supplied endpoints); the sidecar connects directly to whatever HTTP/HTTPS endpoint the user configures per engine, and the source text is sent to the third-party service of the chosen engine. The local CLI engine executes user-configured local commands via an argument array (never through a shell); credentials stay with that CLI and are never touched by the plugin. When the built-in free engine is selected, your source text is likewise sent to that community endpoint (index-translate.bilibili.com); it is a shared service with no availability guarantee and no SLA, so choose one of your own engines if stability or data routing matters to you. API keys are encrypted with the OS keychain (Windows DPAPI / macOS Keychain / Linux secret-tool) before being written to the plugin data directory, falling back to machine-bound AES-256-GCM with an explicit in-UI warning. Engine config, history and preferences live in <plugin-data>/translation.db (SQLite), written by the sidecar; translation history (source and target text) is stored in plaintext and survives uninstallation, and can be cleared at any time from the History tab; the frontend runs in an opaque-origin sandbox and never touches disk or localStorage."
+          "description": "Translation — a multi-engine translation plugin with 9 engine types: an out-of-the-box free translation service (Bilibili's publicly deployed Index-Translate model, no signup and no API key), OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history."
         }
       }
     },
@@ -4055,10 +4188,10 @@
     {
       "id": "io.dbx.excalidraw",
       "name": "Excalidraw Studio",
-      "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX.",
+      "description": "A local-first Excalidraw workspace built into DBX: sketch diagrams and flowcharts, drop SQL result grids or estimated execution plans onto the canvas to annotate, and hand any canvas to the built-in AI panel; everything is stored as .excalidraw files on your machine.",
       "publisher": "runstone",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.0/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.2/icon.png",
       "tags": [
         "diagram",
         "drawing",
@@ -4075,8 +4208,50 @@
       "source": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
       "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
       "license": "MIT",
-      "latestVersion": "0.4.0",
+      "latestVersion": "0.4.2",
       "versions": [
+        {
+          "version": "0.4.2",
+          "releasedAt": "2026-10-31T10:59:42.796Z",
+          "releaseNotes": "Adds a host-native save dialog, deep links from the editor and the result view into DBX's own file manager, remembered UI preferences (result row count and home search), and hands the Excalidraw editor the host locale as-is so its own translations apply. Also corrects the store listing, which previously declared no permissions while the manifest required two. New in this line: a Plan-on-canvas action in the result view lays the query's estimated execution plan out as an annotatable Excalidraw tree (host plan API required; declares host.plans:read). New in 0.3.0: an Ask AI action hands the parsed plan to DBX's built-in AI panel as a one-way snapshot (declares host.ai), and plan warnings land on the canvas as a sticky note. New in 0.3.1: clipboard integration — the export menu can copy the scene as JSON, and the editor gains a Paste menu that drops a scene copied from another diagram, or a screenshot from the system clipboard, straight onto the canvas (screenshots are stored in the content-addressed asset store like any other image). Reading the clipboard asks once per session and requires the new host.clipboard:read permission; the paste menu hides itself on hosts without the capability. New in 0.3.2: failure toasts across the home screen, editor and result view now append the underlying error detail (for example \"Connection is not open\"), so a problem is reportable without opening DevTools; error toasts stay up longer, and the save-status chip shows the cause on hover. Copying a scene whose JSON exceeds the host's 2 MiB bridge limit now fails with a clear pointer to export instead of a generic host rejection, measured over the exact request envelope so CJK content counts correctly. The result view also passes the tab's schema to the plan API (takes effect once the host supplies it), and the Ask-AI plan-context size check now measures UTF-8 bytes. New in 0.4.0: the host tab now follows what the plugin is showing — the open document's name in the editor (dotted while anything is unsaved) and the query-derived name on result-view tabs, so tabs opened from different queries are told apart. The built-in AI panel also gains plugin suggestion chips that follow the view: result interpretation, visualization ideas and SQL review while a result set is on offer, plan interpretation once a plan is on the canvas, cleared on plain canvases, and re-asserted whenever a tab comes back to the front. Both features are capability-gated and declare no new permissions — hosts without them keep today's behavior. New in 0.4.1: fixes a 0.4.0 regression that rendered every plugin tab blank on hosts supporting the new tab-title capability. 0.4.1 also adds three result-view capabilities. Append to a canvas lays a second or further result set beside what a diagram already holds: the result view gains an Add-to-existing-canvas action that picks a target diagram, places the new grid to the right of the live content and top-aligned with it, numbers same-table titles, and shrinks rows honestly against the 2 MB scene limit (no new permissions). Result grids now lay out the host's full 500-row snapshot instead of capping at 200, by drawing each cell as a sparse Excalidraw element whose fields equal to restore() defaults are omitted - a restore-parity test pins that contract, and over-budget tables still trim honestly with the count shown. Send data to AI opens the built-in AI panel with the current result set as a one-way context snapshot (SQL plus display-ready cells, sampled to the 2 MiB context cap) without auto-sending, so interpretation, comparison or follow-up SQL are the user's call; the panel's suggestion chips now name that button when no snapshot is attached. New in 0.4.2: refreshes the store listing copy — the marketplace card now describes what the plugin actually does (result grids and execution plans laid onto an annotatable canvas, a one-click handoff to the built-in AI panel, diagrams stored locally as .excalidraw files) instead of a one-line tagline. No code changes beyond the version bump.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.2/io.dbx.excalidraw-0.4.2-darwin-arm64.dbxp",
+              "sha256": "ddbfbde4842ddaf4aca4ee088ef7c26146dd738da920fb075ac66cf76cdc741f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18299652
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.2/io.dbx.excalidraw-0.4.2-darwin-x64.dbxp",
+              "sha256": "fb309bc2cc97bfe54231ef0abed99b5e618c050028bad2cb8998becdf0cb1827",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18398144
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.2/io.dbx.excalidraw-0.4.2-linux-arm64.dbxp",
+              "sha256": "6ddd966f7a3013f5cfebe0658ac29091247e6bcc25a2a9fa1a319096d0609aa5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18288731
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.2/io.dbx.excalidraw-0.4.2-linux-x64.dbxp",
+              "sha256": "94893ef07dff5062edce15ede7e6a35cd4cee1633e323463996245c8fc9bac0d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18417735
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.2/io.dbx.excalidraw-0.4.2-windows-x64.dbxp",
+              "sha256": "73a0c719ab6b9ef97cd2fbcac9a8d7ae1263383280f1d6c6e1f414ab3475778a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18478529
+            }
+          ]
+        },
         {
           "version": "0.4.0",
           "releasedAt": "2026-10-28T15:13:32.295Z",
@@ -4375,7 +4550,7 @@
       "localizations": {
         "zh-CN": {
           "name": "Excalidraw Studio",
-          "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
+          "description": "内嵌于 DBX 的本地优先画图工作台：Excalidraw 画布与 SQL 工作流打通，结果集和执行计划可以直接铺到画布上批注，也能一键交给内置 AI 解读；图表以 .excalidraw 文件保存在本地。"
         }
       }
     },
@@ -7921,7 +8096,7 @@
       "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.11/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.12/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -7940,8 +8115,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.7.11",
+      "latestVersion": "0.7.12",
       "versions": [
+        {
+          "version": "0.7.12",
+          "releasedAt": "2026-10-30T09:58:12.991Z",
+          "releaseNotes": "First official store release: interactive terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.12/io.dbx.ssh-0.7.12-darwin-arm64.dbxp",
+              "sha256": "91c8ebb1a1a7cde976b03651fc61c81a566ba9bec1c2e2a851e249e5892808a5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 19445475
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.12/io.dbx.ssh-0.7.12-darwin-x64.dbxp",
+              "sha256": "fb6fc1629101254198e842c9bd2981dec8018f7f06164f3b83a68b0071f519ca",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 20099272
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.12/io.dbx.ssh-0.7.12-linux-arm64.dbxp",
+              "sha256": "0333385e7389cf4c9548760959edfa48104195e3353832c6b0a8b37af959ef36",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 20662143
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.12/io.dbx.ssh-0.7.12-linux-x64.dbxp",
+              "sha256": "b61e9adc2441f52f04281f6bd8aabd1cd00ea3dfd237c4d2559b4e4a549c7af5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 21150952
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.12/io.dbx.ssh-0.7.12-windows-x64.dbxp",
+              "sha256": "ae7cc863c40de1c61b3acff1b2e8244d5e43fc80f6e885621c696be68b522b1a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18888017
+            }
+          ]
+        },
         {
           "version": "0.7.11",
           "releasedAt": "2026-10-28T15:13:49.086Z",
@@ -10970,7 +11187,7 @@
       "description": "A quiet online parlour for Chinese chess and Gomoku, with rooms, spectators, and match clocks.",
       "publisher": "lieng618",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.lieng618.dbx-mini-games/0.4.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.lieng618.dbx-mini-games/0.4.3/icon.svg",
       "tags": [
         "game",
         "chess",
@@ -10981,11 +11198,25 @@
       "permissions": [
         "host.network:https://1.92.64.227"
       ],
-      "source": "https://github.com/lieng618/dbx-mini-games/tree/v0.4.2",
+      "source": "https://github.com/lieng618/dbx-mini-games/tree/v0.4.3",
       "homepage": "https://github.com/lieng618/dbx-mini-games",
       "license": "Apache-2.0",
-      "latestVersion": "0.4.2",
+      "latestVersion": "0.4.3",
       "versions": [
+        {
+          "version": "0.4.3",
+          "releasedAt": "2026-10-31T10:59:10.110Z",
+          "releaseNotes": "本次更新重做房间界面：大厅房间卡片、创建房间、设置与结算各自成面板；五子棋终局新增墨龙连线与落子特效，动态特效可一键关闭；象棋终局最后一手放慢到一秒，胜负看得更清；网络波动时改为显示「重连中」，不再弹出误报。",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.lieng618.dbx-mini-games/0.4.3/io.github.lieng618.dbx-mini-games-0.4.3-universal.dbxp",
+              "sha256": "15aa1a27c37959b320db93ed6b03694ac876d774cf9feaa2a5f76f32d244c6b5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 276385
+            }
+          ]
+        },
         {
           "version": "0.4.2",
           "releasedAt": "2026-10-24T17:28:13.937Z",
@@ -11274,7 +11505,7 @@
       "description": "Browse projects and code, review merge requests, watch pipelines and handle issues inside DBX.",
       "publisher": "nixing178",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.1.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.2.4/icon.svg",
       "tags": [
         "gitlab",
         "code-review",
@@ -11284,13 +11515,28 @@
       ],
       "permissions": [
         "host.workbench",
-        "host.events"
+        "host.events",
+        "host.storage"
       ],
-      "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.1.0",
+      "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.2.4",
       "homepage": "https://github.com/nixing178/dbx-plugin-gitlab",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.0",
+      "latestVersion": "0.2.4",
       "versions": [
+        {
+          "version": "0.2.4",
+          "releasedAt": "2026-10-30T10:23:08.648Z",
+          "releaseNotes": "Fix project navigation pin persistence across DBX workbench reloads.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.2.4/io.github.nixing178.gitlab-0.2.4-windows-x64.dbxp",
+              "sha256": "c4634d916e61a9595e77c0582318fffcb7f4eeef21514f26ed514e20bcbf9617",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4709945
+            }
+          ]
+        },
         {
           "version": "0.1.0",
           "releasedAt": "2026-10-28T09:56:25.897Z",
